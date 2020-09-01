@@ -33,3 +33,7 @@
 
 ### Frontの起動方法
 frontednディレクトリで```npm run start```で起動可能
+
+### git運用方法
+ - feature_名前_branch名
+
