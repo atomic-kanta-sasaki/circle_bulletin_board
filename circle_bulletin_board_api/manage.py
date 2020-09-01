@@ -4,7 +4,7 @@ import os
 import sys
 #かんちゃん
 #ツボちゃん
-#どうや
+#こんちわ
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'circle_bulletin_board_api.settings')
