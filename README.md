@@ -1,4 +1,4 @@
-# circle-_bulletin_board
+# circle_bulletin_board
 サークル掲示板サイト
 ### DBの起動方法
 ```
