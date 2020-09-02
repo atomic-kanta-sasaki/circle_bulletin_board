@@ -2,9 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-#かんちゃん
-#ツボちゃん
-#こんちわ
+
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'circle_bulletin_board_api.settings')
