@@ -1,6 +1,12 @@
+
+
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Entry from './EntryPage';
+import EntryPage from './EntryPage';
+import CircleList from './CircleList';
+import NewsList from './NewsList';
+import BoardList from './BoardList';
+import TopBar from './component/TopBar';
 
 class App extends Component {
   render() {
@@ -8,7 +14,11 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Route path='/' component={Entry} exact={true} />
+            <Route path='/' component={EntryPage} exact={true} />
+            <Route path='/entry' component={TopBar} exact={true} />
+            <Route path='/circle' component={CircleList} />
+            <Route path='/news' component={NewsList} />
+            <Route path='/board' component={BoardList} />
           </div>
         </Router>
       </div>

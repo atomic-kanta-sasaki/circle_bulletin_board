@@ -13,7 +13,7 @@ const Entry = styled.h1``;
 class EntryPage extends Component {
 
     toMainPage() {
-        this.props.history.push('/About')
+        this.props.history.push('/circle')
     }
 
     render() {
@@ -24,7 +24,6 @@ class EntryPage extends Component {
                 </Entry>
                 <ProgressBar />
                 <Stepper />
-                <TopBar />
                 <PrimaryButton />
                 <TextFieldComponent />
                 <Album />
