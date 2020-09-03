@@ -7,29 +7,17 @@ import Card from './component/Card';
 import ProgressBar from './component/ProgressBar';
 import Stepper from './component/Stepper';
 import TopBar from './TopBar';
+import SideNav from './Sidenav';
 
 const Entry = styled.h1``;
 
 class EntryPage extends Component {
 
-    toMainPage() {
-        this.props.history.push('/circle')
-    }
-
     render() {
         return (
             <div>
                 <TopBar />
-                <Entry>
-                    コンポーネント一覧を示す
-                </Entry>
-                <ProgressBar />
-                <Stepper />
-                <PrimaryButton />
-                <TextFieldComponent />
-                <Album />
-                <Card />
-
+                <SideNav />
             </div>
 
         )

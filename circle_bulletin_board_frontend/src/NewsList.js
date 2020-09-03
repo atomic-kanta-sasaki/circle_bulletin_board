@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import TopBar from './component/TopBar';
 
 const Container = styled.div``;
 
