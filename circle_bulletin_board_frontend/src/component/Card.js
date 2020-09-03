@@ -7,7 +7,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import { withRouter } from 'react-router';
 
 const Container = styled.div`
@@ -61,9 +60,8 @@ class CardComponent extends Component {
                             </Grid>
 
                             <Grid item xs={12} sm={6}>
-                                <Card style={{ maxWidth: 345 }}>
+                                <Card style={{ maxWidth: '345px' }}>
                                     <Link href="/circle/detail">
-
                                         <CardActionArea>
                                             <CardMedia
                                                 component="img"
@@ -75,19 +73,17 @@ class CardComponent extends Component {
                                             <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
                                                     タートルズ
-                                                </Typography>
+                                            </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
                                                     週１で活動してるテニサーです。<br />
-                                                    よろしく！
-                                                </Typography>
+                                                よろしく！
+                                        </Typography>
                                             </CardContent>
                                         </CardActionArea>
-                                        <CardActions>
-                                        </CardActions>
                                     </Link>
+
                                 </Card>
                             </Grid>
-
                         </Grid>
                     </div>
                 </CardContainer>
@@ -123,9 +119,8 @@ class CardComponent extends Component {
                             </Grid>
 
                             <Grid item xs={12} sm={6}>
-                                <Card style={{ maxWidth: 345 }}>
+                                <Card style={{ maxWidth: '345px' }}>
                                     <Link href="/circle/detail">
-
                                         <CardActionArea>
                                             <CardMedia
                                                 component="img"
@@ -137,16 +132,15 @@ class CardComponent extends Component {
                                             <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
                                                     タートルズ
-                                                </Typography>
+                                            </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
                                                     週１で活動してるテニサーです。<br />
-                                                    よろしく！
-                                                </Typography>
+                                                よろしく！
+                                        </Typography>
                                             </CardContent>
                                         </CardActionArea>
-                                        <CardActions>
-                                        </CardActions>
                                     </Link>
+
                                 </Card>
                             </Grid>
 

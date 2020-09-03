@@ -6,19 +6,27 @@ import Album from './component/Album';
 import FacebookIcon from './component/SNS/FacebookIcon';
 import TwitterIcon from './component/SNS/TwitterIcon';
 import InstagramIcon from './component/SNS/InstagramIcon';
-
+import Sidenav from './Sidenav';
+import TopBar from './TopBar';
 
 const MainLayout = styled.div`
 `;
 
-
-const Container = styled.div`
+const Top = styled.div`
     margin-bottom:30px;
 `;
 
-const CardContainer = styled.div`
+const Container = styled.div`
+    margin-bottom:30px;
+    display:flex;
     width: 80%;
     margin: 0 auto;
+`;
+
+const CardContainer = styled.div`
+    width: 60%;
+    margin: 0 auto;
+    margin-left: initial;
 `;
 
 const ImangeStyle = styled.div`
@@ -34,6 +42,7 @@ const DetailContens = styled.div`
     color: rgb(101, 101, 101);
     white-space: pre-line;
     display:flex;
+    flex-wrap: wrap;
 `;
 
 const TitleStyle = styled.span`
@@ -50,14 +59,9 @@ class CircleDetail extends Component {
     render() {
         return (
             <MainLayout>
+                <TopBar />
                 <Container>
-                    <Card style={{ height: '75px' }}>
-                        <CardContent>
-                            {"ここにTOP＋Logoを入れる"}
-                        </CardContent>
-                    </Card>
-                </Container>
-                <Container>
+                    <Sidenav />
                     <CardContainer>
                         <Card>
                             <CardContent>

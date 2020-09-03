@@ -6,7 +6,6 @@ import EntryPage from './EntryPage';
 import CircleList from './CircleList';
 import NewsList from './NewsList';
 import BoardList from './BoardList';
-import TopBar from './component/TopBar';
 import CircleDetail from './CircleDetail';
 
 class App extends Component {
@@ -16,7 +15,6 @@ class App extends Component {
         <Router>
           <div>
             <Route path='/' component={EntryPage} exact={true} />
-            <Route path='/entry' component={TopBar} exact={true} />
             <Route path='/circle' component={CircleList} exact={true} />
             <Route path='/news' component={NewsList} />
             <Route path='/board' component={BoardList} />
