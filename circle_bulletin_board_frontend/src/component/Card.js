@@ -4,7 +4,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
@@ -21,7 +20,9 @@ class CardComponent extends Component {
     render() {
         return (
             <Container>
-                <h2>サークル紹介</h2>
+                <div style={{ textAlign: 'center' }}>
+                    <h2>サークル紹介</h2>
+                </div>
                 <CardContainer>
                     <div>
                         <Grid container spacing={2}>
@@ -91,11 +92,11 @@ class CardComponent extends Component {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             タートルズ
-                                </Typography>
+                                        </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p">
                                             週１で活動してるテニサーです。<br />
-                                    よろしく！
-                                </Typography>
+                                            よろしく！
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
