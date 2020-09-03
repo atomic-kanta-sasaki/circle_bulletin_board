@@ -7,7 +7,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
-
+import Button from '@material-ui/core/Button';
+import { withRouter } from 'react-router';
 
 const Container = styled.div`
     margin: 0 auto;
@@ -16,7 +17,13 @@ const CardContainer = styled.div`
     margin: 0 auto;
     margin-left: 10%;
 `;
+
+const Link = styled.a`
+    text-decoration: none;
+    color: black;
+`;
 class CardComponent extends Component {
+
     render() {
         return (
             <Container>
@@ -25,114 +32,130 @@ class CardComponent extends Component {
                 </div>
                 <CardContainer>
                     <div>
+
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6}>
                                 <Card style={{ maxWidth: '345px' }}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            component="img"
-                                            alt="Contemplative Reptile"
-                                            height="140"
-                                            image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
-                                            title="Contemplative Reptile"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                タートルズ
+                                    <Link href="/circle/detail">
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                alt="Contemplative Reptile"
+                                                height="140"
+                                                image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
+                                                title="Contemplative Reptile"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    タートルズ
                                             </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                週１で活動してるテニサーです。<br />
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    週１で活動してるテニサーです。<br />
                                                 よろしく！
                                         </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
+                                            </CardContent>
+                                        </CardActionArea>
+                                    </Link>
 
-                                <Card style={{ maxWidth: 345 }}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            component="img"
-                                            alt="Contemplative Reptile"
-                                            height="140"
-                                            image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
-                                            title="Contemplative Reptile"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                タートルズ
-                                </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                週１で活動してるテニサーです。<br />
-                                    よろしく！
-                                </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                    </CardActions>
                                 </Card>
                             </Grid>
+
+                            <Grid item xs={12} sm={6}>
+                                <Card style={{ maxWidth: 345 }}>
+                                    <Link href="/circle/detail">
+
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                alt="Contemplative Reptile"
+                                                height="140"
+                                                image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
+                                                title="Contemplative Reptile"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    タートルズ
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    週１で活動してるテニサーです。<br />
+                                                    よろしく！
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                        </CardActions>
+                                    </Link>
+                                </Card>
+                            </Grid>
+
                         </Grid>
                     </div>
                 </CardContainer>
 
                 <CardContainer>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} sm={6}>
-                            <Card style={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        alt="Contemplative Reptile"
-                                        height="140"
-                                        image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
-                                        title="Contemplative Reptile"
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            タートルズ
-                                        </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            週１で活動してるテニサーです。<br />
-                                            よろしく！
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                                <CardActions>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
+                    <div>
 
-                            <Card style={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        alt="Contemplative Reptile"
-                                        height="140"
-                                        image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
-                                        title="Contemplative Reptile"
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            タートルズ
-                                </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            週１で活動してるテニサーです。<br />
-                                    よろしく！
-                                </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                                <CardActions>
-                                </CardActions>
-                            </Card>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} sm={6}>
+                                <Card style={{ maxWidth: '345px' }}>
+                                    <Link href="/circle/detail">
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                alt="Contemplative Reptile"
+                                                height="140"
+                                                image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
+                                                title="Contemplative Reptile"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    タートルズ
+                                            </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    週１で活動してるテニサーです。<br />
+                                                よろしく！
+                                        </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                    </Link>
+
+                                </Card>
+                            </Grid>
+
+                            <Grid item xs={12} sm={6}>
+                                <Card style={{ maxWidth: 345 }}>
+                                    <Link href="/circle/detail">
+
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                alt="Contemplative Reptile"
+                                                height="140"
+                                                image="https://townwork.net/magazine/wp-content/uploads/2015/03/af9920047454l_R.jpg"
+                                                title="Contemplative Reptile"
+                                            />
+                                            <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    タートルズ
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                    週１で活動してるテニサーです。<br />
+                                                    よろしく！
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <CardActions>
+                                        </CardActions>
+                                    </Link>
+                                </Card>
+                            </Grid>
+
                         </Grid>
-                    </Grid>
+                    </div>
                 </CardContainer>
             </Container>
 
         )
     }
 }
-export default CardComponent;
+export default withRouter(CardComponent);
