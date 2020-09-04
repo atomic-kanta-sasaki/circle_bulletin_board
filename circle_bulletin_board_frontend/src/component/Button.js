@@ -4,14 +4,13 @@ import styled from 'styled-components';
 
 const ButtonStyles = styled.div`
     margin: theme.spacing(1);
-    margin-top:30px;
 `;
 
 class PrimaryButton extends Component {
     render() {
         return (
             <ButtonStyles>
-                <Button variant="outlined" color="primary">
+                <Button variant="outlined" color="primary" style={{ width: '200px' }}>
                     {this.props.buttonText}
                 </Button>
             </ButtonStyles>

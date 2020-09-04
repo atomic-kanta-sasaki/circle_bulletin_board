@@ -33,6 +33,10 @@ const Link = styled.a`
     color: black;
 `;
 
+const InputForm = styled.div`
+    margin-bottom:60px;
+`;
+
 class SingupForm extends Component {
 
     render() {
@@ -44,16 +48,22 @@ class SingupForm extends Component {
                         <Card>
                             <CardContent>
                                 <h1>ログイン</h1>
-                                <TextField FiledName='メールアドレス' />
-                                <TextField FiledName='パスワード' />
-                                <Link href='/singup'>
-                                    <Button buttonText='新規登録はこちら' />
-                                </Link>
+                                <InputForm>
+                                    <TextField FiledName='メールアドレス' />
+                                </InputForm>
+                                <InputForm>
+                                    <TextField FiledName='パスワード' />
+                                </InputForm>
+                                <InputForm>
+                                    <Link href='/introduction'>
+                                        <Button buttonText='新規登録はこちら' />
+                                    </Link>
+                                </InputForm>
                             </CardContent>
                         </Card>
                     </CardContainer>
                 </Container>
-            </MainContainer>
+            </MainContainer >
 
         )
     }
