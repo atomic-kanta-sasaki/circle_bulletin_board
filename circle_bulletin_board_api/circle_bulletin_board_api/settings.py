@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'books.apps.BooksConfig', # 追加
-        # 3rd party
+    'books.apps.BooksConfig',
+    'users.apps.UsersConfig',
     'rest_framework',
     'api.apps.ApiConfig',
     'django.contrib.admin',
