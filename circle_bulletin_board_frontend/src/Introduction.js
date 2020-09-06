@@ -57,7 +57,7 @@ class Introduction extends Component {
                                 <TextField FiledName='連絡用メールアドレス' />
                             </InputForm>
                             <InputForm>
-                                <Link href='/'>
+                                <Link href='/circle/detail/edit'>
                                     <Button buttonText='登録' />
                                 </Link>
                             </InputForm>

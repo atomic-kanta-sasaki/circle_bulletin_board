@@ -46,6 +46,15 @@ class SideNav extends Component {
                             <Typography variant="inherit">サークル詳細</Typography>
                         </MenuItem>
                     </Link>
+                    {/* ここはログインユーザのみ見られるようにする */}
+                    <Link href='/circle/detail/edit'>
+                        <MenuItem>
+                            <ListItemIcon>
+                                <DraftsIcon fontSize="small" />
+                            </ListItemIcon>
+                            <Typography variant="inherit">サークル情報編集</Typography>
+                        </MenuItem>
+                    </Link>
 
                 </MenuList>
             </Paper >
