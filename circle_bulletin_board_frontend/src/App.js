@@ -9,6 +9,7 @@ import BoardList from './BoardList';
 import CircleDetail from './CircleDetail';
 import SingupForm from './SingupForm';
 import Introduction from './Introduction';
+import CircleDetailEdit from './CircleDetailEdit';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path='/circle/detail' component={CircleDetail} exact={true} />
             <Route path='/singup' component={SingupForm} exact={true} />
             <Route path='/introduction' component={Introduction} exact={true} />
+            <Route path='/circle/detail/edit' component={CircleDetailEdit} exact={true} />
           </div>
         </Router>
       </div>

@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import styled from 'styled-components';
-import Album from './component/Album';
-import FacebookIcon from './component/SNS/FacebookIcon';
-import TwitterIcon from './component/SNS/TwitterIcon';
-import InstagramIcon from './component/SNS/InstagramIcon';
 import Sidenav from './Sidenav';
 import TopBar from './TopBar';
+import Button from './component/Button';
 
 const MainLayout = styled.div`
 `;
@@ -33,23 +30,56 @@ const ImangeStyle = styled.div`
     text-align: center;
 `;
 
-const DetailContens = styled.div`
-    margin-bottom: 18px;
+const ShortDetailContent = styled.textarea`
+    width: 150%;
+    background-color: rgb(250, 250, 250);
     font-size: 15px;
-    font-weight: bolder;
-    line-height: 1.73;
+    font-weight: 500;
     letter-spacing: 1px;
-    color: rgb(101, 101, 101);
-    white-space: pre-line;
-    display:flex;
-    flex-wrap: wrap;
+    color: rgb(58, 62, 73);
+    caret-color: rgb(51, 135, 255);
+    margin: 12px 0px;
+    padding: 16px 20px;
+    border-radius: 2px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(171, 171, 171);
+    border-image: initial;
+    height: 12px;
+    resize: none;
 `;
 
-const TitleStyle = styled.span`
+const DetailContens = styled.textarea`
+    width: 150%;
+    height: 150px;
+    background-color: rgb(250, 250, 250);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: rgb(58, 62, 73);
+    caret-color: rgb(51, 135, 255);
+    margin: 12px 0px;
+    padding: 16px 20px;
+    border-radius: 2px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(171, 171, 171);
+    border-image: initial;
+`;
+
+const TitleStyle = styled.div`
     font-family: Roboto, "Open Sans", "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", Arial, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: bolder; 
     margin-right: 4px;
     color: rgb(58, 62, 73);
+`;
+
+const Link = styled.a`
+    text-decoration: none;
+    color: black;
 `;
 
 class CircleDetail extends Component {
@@ -72,28 +102,29 @@ class CircleDetail extends Component {
                                 <TitleStyle></TitleStyle>
                                 <CardContainer>
                                     <TitleStyle>サークル名</TitleStyle>
-                                    <DetailContens>タートル</DetailContens>
+                                    <ShortDetailContent></ShortDetailContent>
 
                                     <TitleStyle>所属大学</TitleStyle> <br />
-                                    <DetailContens>早稲田大学</DetailContens>
+                                    <ShortDetailContent></ShortDetailContent>
                                     <TitleStyle>活動紹介</TitleStyle> <br />
                                     <DetailContens>
-                                        週１日活動しています<br />
-                                        通常は高田馬場周辺の野球場で野球をしています<br />
-                                        練習後みんなでご飯に行きます
+
                                     </DetailContens>
                                     <TitleStyle>サークル加入条件</TitleStyle>
-                                    <DetailContens>早稲田大学に通っている学生に限ります</DetailContens>
+                                    <DetailContens></DetailContens>
                                     <TitleStyle>連絡先</TitleStyle> <br />
-                                    <DetailContens>example@example.com</DetailContens>
-                                    <TitleStyle>SNS</TitleStyle> <br />
-                                    <DetailContens>
-                                        <div><TwitterIcon /></div>
-                                        <div><InstagramIcon /></div>
-                                        <div><FacebookIcon /></div>
-                                    </DetailContens>
-                                    <TitleStyle>活動写真</TitleStyle>
-                                    <Album />
+                                    <DetailContens>kjsadl;j</DetailContens>
+                                    <TitleStyle>Twitter</TitleStyle> <br />
+                                    <ShortDetailContent></ShortDetailContent>
+                                    <TitleStyle>Instagram</TitleStyle> <br />
+                                    <ShortDetailContent></ShortDetailContent>
+                                    <TitleStyle>FaceBoot</TitleStyle> <br />
+                                    <ShortDetailContent></ShortDetailContent>
+
+                                    <TitleStyle>活動写真のアップロード</TitleStyle>
+                                    <Link href='/circle/detail'>
+                                        <Button buttonText='変更を保存する' />
+                                    </Link>
                                 </CardContainer>
                             </CardContent>
                         </Card>
