@@ -55,6 +55,11 @@ class SingupForm extends Component {
                                     <TextField FiledName='パスワード' />
                                 </InputForm>
                                 <InputForm>
+                                    <Link href='/circle/detail'>
+                                        <Button buttonText='ログイン' />
+                                    </Link>
+                                </InputForm>
+                                <InputForm>
                                     <Link href='/introduction'>
                                         <Button buttonText='新規登録はこちら' />
                                     </Link>
